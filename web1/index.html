@@ -37,12 +37,14 @@
     <style>
    
         
-        * { margin: 0; padding: 0;}
+        * { margin: 0; padding: 0; }
    
         body { width: 100%; font-family: 'Noto Sans KR', sans-serif; }
-        ul { list-style: none; }
+        ul { list-style:none; }
         a { text-decoration: none;} /*a태그 글자 밑에 줄 표시하지 않기*/
         img { border: none; }   /*이미지 테두리 없애기(border:테두리)*/
+
+        .np { font-family: 'Nanum Pen Script', cursive;}
 
        /* .box { margin: 10px; margin-top: 30px;}  mt30(세부속성-위쪽) : margin-top:30px, 통합속성부터 선언 후 세부속성 선언 */
        /* .np { font-family: 'Nanum Pen Script', cursive; } */
@@ -53,16 +55,34 @@
         .left_tnb { float: left; }
         .left_tnb li { float: left; line-height:20px; }
         .left_tnb li:first-child::after { content:"|"; color:#2352; margin-right: 14px;}
-
-        .left_tnb li:child::after { content:"|"; color:#2352; margin-right: 14px;}
+        .left_tnb li:last-child::before { content:"|"; color:#2352; margin-right: 14px;}
         
         .left_tnb li a { margin-right:14px;}
         .left_tnb li a:hover { color:darkgreen;}
         .right_tnb { float: right;}
-        .right_tnb li {float: left; line-height:20px;}
-        .right_tnb li a { margin-left:14px; width:30px; height: 30px;}
+        .right_tnb li { float: left; line-height:20px; }
+        .right_tnb li a { margin-left:14px; display:block; width:30px; height: 30px;
+        text-indent: 9999px; overflow: hidden;
+        background-image: url("./images/icons.png");
+        margin-top: 10px; background-size: 300px 700px;}
+        /*
+        split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시
+        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
+        */
+        /*
+        각 각의 아이콘 이미지 적용시
+        .right_tnb li a { background-size:auto; background-position:center center; }
+        .right_tnb li a.ico1 { background-image: url("./images/icon1.png");}
+        .right_tnb li a.ico2 { background-image: url("./images/icon2.png");}
+        .right_tnb li a.ico3 { background-image: url("./images/icon3.png");}
+        */
+        .right_tnb li a.sns1 { background-position:-67px -67px; }
+        .right_tnb li a.sns2 { background-position:-7px -67px; }
+        .right_tnb li a.sns3 { background-position:-36px -67px; }
+        .tnb ul li a { color:#fff; font-size:0.9em;}
+
         .tnb ul li a { color: #2369; font-size: 11px;}
-        .gnb { clear:both; width:100%; height:50px; background-color: #fff; border-bottom:1px solid #333;}
+        .gnb { clear:both; width:100%; height:120px; background-color: #fff; border-bottom:1px solid #333;}
     </style>
 
 </head>
@@ -79,16 +99,17 @@
                         <li><a href="">투자정보</a></li>
                         <li><a href="">인재채용</a></li>
                     </ul>
-                </div>
-            </nav>
-            <nav class="gnb">
-                <div class="gnb_wrap">
                     <ul class="right_tnb">
                         <li><a href="" class="sns1">A1</a></li>
                         <li><a href="" class="sns2">A2</a></li>
                         <li><a href="" class="sns3">A3</a></li>
                         <li><a href="" class="sns4">A4</a></li>
                     </ul>
+                </div>
+            </nav>
+            <nav class="gnb">
+                <div class="gnb_wrap">
+
                 </div>
             </nav>
         </header>
