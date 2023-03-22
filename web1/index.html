@@ -68,25 +68,7 @@
             text-indent: 9999px; overflow: hidden; width:7px; height: 15px; } 
         .right_tnb li a.sns4 { margin-left:14px; display:block; 
             text-indent: 9999px; overflow: hidden; width:15px; height: 15px; }
-        .main { clear: both; width: 100%; height: 120px; background-color: #fff;} 
-        .main_wrap { width: 1400px; margin: 0 auto; position: relative;}
-
-        .logo { display:block; width: 120px; height: 45px; overflow: hidden;
-            position: absolute; top: 0px; left: 0px;}
-        .logo img { display: block; width: 100%; height: auto;}
-        
-        .gnb { position:relative; }
-        .gnb > ul { width: 800px; height: 48px; border:1px solid #333; margin: 0 auto;}
-        .gnb > ul> li { float:left; }
-
-        .sitemap_btn { display: block; position: absolute; top: 0px;
-            right: 0px; cursor: pointer;}
-        .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: inherit;
-            background-color: yellow; display:none;}
-                
-                   
-
-        
+  
         /*
         split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시
         background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
@@ -104,7 +86,25 @@
         .right_tnb li a.sns4 { background-image: url("./images/ico_sns_twitter.png");}
     
         .tnb ul li a { color: #2369; font-size: 11px;}
+        
         .main { clear:both; width:100%; height:120px; background-color: #fff; border-bottom:1px solid #333;}
+        .main_wrap { width: 1400px; margin: 0 auto; position: relative;}
+
+        .logo { display:block; width: 120px; height: 45px; overflow: hidden;
+            position: absolute; top: 0px; left: 0px;}
+        .logo img { display: block; width: 100%; height: auto;}
+        
+        .gnb { position:relative; }
+        .gnb > ul { width: 800px; height: 48px; border:1px solid #333; margin: 0 auto;}
+        .gnb > ul> li { float:left; }
+
+        .sitemap_btn { display: block; position: absolute; top: 0px;
+            right: 0px; cursor: pointer;}
+        .sitemap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: inherit;
+            background-color: yellow; display:none;}
+        #sitemap_ck:checked ~ .sitemap { display: block; }
+        #sitemap_ck { display: none;}    
+                
     </style>
 
 </head>
