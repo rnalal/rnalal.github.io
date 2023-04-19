@@ -47,7 +47,7 @@
         .np { font-family: 'Nanum Pen Script', cursive;}
 
         .container { clear:both; width:100%; }
-        .hd { clear:both; width:100%; }
+        .hd { clear:both; width:100%;  }
         .tnb { clear:both; width:100%; height:24px; background-color: #2352;}
         .tnb_wrap { clear:both; width: 1400px; margin: 0 auto;  height:20px; }
         .left_tnb { float:left;}
@@ -75,7 +75,7 @@
     
         .tnb ul li a { color: #2369; font-size: 0.9em;}
         
-        .main { clear:both; width:100%; height:75px; background-color: #fff; 
+        .main { clear:both; width:100%; height:75px; background-color: rgba(255, 255, 255,0.95); 
             border-bottom:1px solid #2369;}
         .main_wrap { width: 1400px; margin: 0 auto; position: relative;}
 
@@ -89,8 +89,8 @@
         line-height: 50px;}
         .gnb > ul > li > a{ display:block; font-size: 1.3em; color: #333;
         font-weight: bold;}
-        .gnb > ul > li:hover > a{ border-bottom:2px solid #ff6600;
-        color:#ff6600;}
+        .gnb > ul > li:hover > a{ border-bottom:2px solid #000;
+        color:#000;}
 
         .sub { display: none; padding-top: 20px; width: 1000px;}
         .sub.item2 { margin-left: -140px; }
@@ -100,9 +100,9 @@
         .sub.item6 { margin-left: -200px; }
         .gnb > ul > li:hover > .sub{ display: block;}
         .sub > ul > li { float:left; width: 15%;}
-        .sub > ul > li > a{ display: block; color:#ff6600; font-size:1.0em;
+        .sub > ul > li > a{ display: block; color:#000; font-size:1.0em;
         font-weight: 500;}
-        .sub > ul > li:hover > a { color:#ffbb00; }
+        .sub > ul > li:hover > a { color:#ff6600; }
 
         .sitemap_btn { display: block; position: absolute; top: 20px; z-index: 10;
             right: 0px; cursor: pointer; width:20px; height:20px; overflow: hidden;
@@ -112,17 +112,17 @@
         #sitemap_ck:checked ~ .sitemap { display:block; }
         #sitemap_ck { display:none;}    
         
-        .vs { clear:both; position:relative; width:100vw;  height:calc(100vh - 135px);
+        .vs { clear:both; position:relative; width:100vw;  height:100vh; }
         overflow:hidden; }        
         .vs video { display:block; width: 100%;}
 
-        .page { clear: both; position: relative; width: 100vx; height: 150vh;}
-        .page_wrap { clear: both; width: 1400px; margin: 0 auto;}  ----!!!!!!!!
+        .page { clear: both; position: relative; width: 100vx; height: 130vh;}
+        .page_wrap { clear: both; width: 1400px; margin: 0 auto;}
         .page_title { text-align: center; font-size: 40px; padding-top: 1.5em; }
 
         #page1 { background-color: #fff; color:#333;}
+        #page1 .tit_box {float: left; clear: both; padding-top: 80px; width: 1280px; margin: 0 auto;}
         #page1  .page_wrap { width:1280px; padding-top: 80px; }
-        #page1  .tit_box { float: left; }
         .sub_title { font-size: 28px; color:orange; font-weight: 100; letter-spacing: 2px;}
         .main_title { font-size: 72px; color: #000; font-weight: 700; float: left; }
         #page1  .pg1_btn_box { clear:both; }
@@ -149,13 +149,14 @@
         left: 50px; font-size: 16px; color: #666; }
 
         #pg1_ra1:checked ~ .ban_fr  .ban_box { margin-left: 0;}
-        #pg1_ra2:checked ~ .ban_fr  .ban_box { margin-left: -1200px;}
-        #pg1_ra3:checked ~ .ban_fr  .ban_box { margin-left: -2400px;}
+        #pg1_ra2:checked ~ .ban_fr  .ban_box { margin-left: -1280px;}
+        #pg1_ra3:checked ~ .ban_fr  .ban_box { margin-left: -2560px;}
         #pg1_ra4:checked ~ .ban_fr  .ban_box { margin-left: -3840px;}
         #pg1_ra5:checked ~ .ban_fr  .ban_box { margin-left: -5120px;}
-        #pg1_ra5:checked ~ .ban_fr  .ban_box { margin-left: -6400px;}
+        #pg1_ra6:checked ~ .ban_fr  .ban_box { margin-left: -6400px;}
         
         #page2 { background-color: #eee; color:#222;}
+        #page2 .tit_box {clear: both; padding-top: 80px; width: 1280px; margin: 0 auto;}
         #page2  .page_wrap {width: 1280px; padding-top: 80px;}
         .grid_fr {clear: both; width: 1280px;} 
         .grid_fr    .grid_box {clear: both; width: 1280px; padding-top: 40px;}
@@ -173,10 +174,90 @@
         .grid_box   li  a.item3 .grid_tit { padding-top: 15.2em; line-height: 1.8; }
         .grid_box   li  a.grid_com {font-size: 16px;}    
 
-
         #page3 { background-color: #ff99005d; color:#fff;}
+        #page3 .tit_box {clear: both; padding-top: 80px; width: 1280px; margin: 0 auto;}
+        #page3 .page_wrap{width: 1280px; padding-top: 80px;}
+        .col_fr {clear: both; width: 1280px; padding-top: 40px;} 
+        .col_fr .col_box{clear: both; width: 1280px;}   
+        .col_fr .col_box li.left{float: left; width: 844px; height: 458px;
+        background-color: #fff; color:#000; border-radius: 25px; box-sizing: border-box;
+        padding: 38px;}
+        .one_line{font-size: 28px; line-height: 2; padding-bottom: 18px;}
+        .inv_p {clear: both;}
+        .col_dl { clear: both; padding-top: 30px;}
+        .col_dl dd{width: 250px; float: left; margin: 20px 0px; font-size: 22px; font-weight: 100;
+        line-height: 1.6;}
+        .col_dl dd .d_tit { font-weight: 200; color: #999;}
+        .col_dl dd .d_com {font-weight: 100;}
+        .col_fr .col_box li.right {float: right; width: 410px; height: 458px;}
+        .col_fr .col_box li.right a {display: block; background-color: #fff; color: #333;
+        height: 135px; line-height: 135px; margin-bottom: 26px; border-radius: 25px;}
+        .col_fr .col_box li.right a span { padding-left: 20px;}
+        .col_fr .col_box li.right a:after { display: block; content:""; display: block; float: right; margin-top: 50px; margin-right: 20px;}
+        .col_fr .col_box li.right a span:before {display: block; content:""; display: block; float: left;
+        width: 79px; height: 96px; margin-top: 60px; margin-left: 20px;}
+        .col_fr .col_box li.right { display: block; background-size:auto; background-position:center center;}
+    
         #page4 { background-color: #fff; color:#333;}
+        #page4 .tit_box {clear: both; padding-top: 80px; width: 1280px; margin: 0 auto;}
+        .more{display: block; position: absolute; top: 60px; right: 200px; font-size: 68px; font-weight: bolder;
+        width: 80px; height: 80px; border: 1px solid #ccc; text-align: center; color: #999;}
+        .board_fr { clear: both; width: 1280px; margin: 0px auto; padding-top: 40px;}
+        .tb1 { clear: both; display: table; border-collapse: collapse;}
+        .tbl tr { display: table-row; width: 1280px;}
+        .tbl td {display: table-cell; min-height: 50px; padding-top: 20px; padding-bottom: 20px;
+        border-top: 1px solid #ccc;}
+        .tbl tr:last-child td { border-bottom:1px solid #ccc;}
+        .tbl td.td1 { vertical-align: top; width: 100px; text-align:  left; font-size: 32px;
+        color: #ff6600; font-weight: 100;}
+        .tbl td a { display: block; color: #333; transition-duration: 0.4s;}
+        .tbl td a .td_tit { width: 1100px; font-size: 28px; line-height: 1.4; font-weight: 200; padding-right: 20;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .tbl td a .td_com { width: 1100px; font-size: 18px; line-height: 2.2; font-weight: 100;
+        color: #999; padding-right: 36px;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+        .tbl td a:hover { color:#ff6600;}
+        .tbl td a:hover .td_com { color:#ff6600;}
+
         #page5 { background-color: #eee; color:#222;} 
+        #page5 .tit_box {clear: both; padding-top: 80px;}
+        .colm_fr { clear: both;}
+        .colm_fr .lst_tit {clear: both; padding-top: 30px; font-size: 28px; font-weight: 100;
+        line-height: 2;}
+        .lst1, .lst2 { clear: both;}
+        .lst1 li, .lst2 li { float: left; width: 410px; margin-right: 25px; height: 250px;
+        background-color: #fff; border-radius: 25px; box-sizing: border-box; padding: 28px; padding-left: 40px;}
+        .lst1 li:last-child, .lst2 li:last-child{ margin-right: 0;}
+        .colm_fr ul .item_tit { font-size: 32px; line-height: 2.8; color: #ff6600;}
+        .colm_fr ul li:before { content: ""; display: block; width: 70px; height: 70px;
+        background-repeat:no-repeat;}
+        .colm_fr ul li a {display: block; width: 150px; line-height: 30px; padding-left: 18px;
+        background-color: #ff6600; color:#fff; border-radius: 20px; }
+        .colm_fr ul li a:after {content: "→"; padding-left: 60px;}
+        
+        .colm_fr .lst1 .item1:before {background-image: url("./images/goodicon.png");}
+        .colm_fr .lst1 .item2:before {background-image: url("./images/lettericon.png");}
+        .colm_fr .lst1 .item3:before {background-image: url("./images/quicon.png");}
+        .colm_fr .lst2 .item1:before {background-image: url("./images/movieicon.png");}
+        .colm_fr .lst2 .item2:before {background-image: url("./images/historyicon.png");}
+        .colm_fr .lst2 .item3:before {background-image: url("./images/recipeicon.png");}
+
+        #ft {clear:both;}
+        .ft .row{clear: both; padding-top: 25px; padding-bottom: 25px; min-height: 60px;}
+        .ft .row1{background-color: #ff6600;}
+        .ft .fnb li {float: left; margin-right: 50px; line-height: 60px;}
+        .ft .fnb li a {color: #fff; font-size: 18px;}
+        .ft .fnb li a:hover {color: gold;}
+        .ft #favo {display: block; line-height: 60px; height: 60px; width: 200px;text-align: center;
+        font-size: 18px;}
+
+        .ft .row2 {background-color: #f1f1f1; height: 224px;}
+        .ft .slogan { font-size: 36px; color: #e0e0e0;}
+        .ft .ft_link_fr dl {float: left; font-size: 16px; line-height: 32px; padding-left: 28px;}
+        .ft .ft_link_fr dl a {color: #a0a0a0;}
+        .ft .ft_link_fr dl a:hover {color:#333;}
+
+
 
 
     </style>
@@ -318,51 +399,57 @@
                             <div class="ban_fr">
                                 <ul class="ban_box">
                                     <li class="item1">
-                                        <img src="./images/bg_rm.jpg" alt="라면" class="pic">
+                                        <img src="./images/c1.png" alt="라면" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">01</h2>
+                                            <h2 class="ban_tit2">삼양라면</h2>
+                                            <p class="ban_com">라면의 원조, 기본에 충실한 삼양의
+                                                대표 브랜드</p>
                                         </div>
                                     </li>
                                     <li class="item2">
-                                        <img src="./images/intro_buldak.png" alt="불닭볶음면" class="pic">
+                                        <img src="./images/c2.png" alt="불닭볶음면" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">02</h2>
+                                            <h2 class="ban_tit2">불닭볶음면</h2>
+                                            <p class="ban_com">먹을수록 중독되는 매운맛! <br>
+                                                국내외에서 큰 사랑을 받고 있는 <br>
+                                                삼양식품의 대표 브랜드</p>
                                         </div>
                                     </li>
                                     <li class="item3">
-                                        <img src="./images/snack.jpg" alt="스낵" class="pic">
+                                        <img src="./images/c3.jpg" alt="스낵" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">03</h2>
+                                            <h2 class="ban_tit2">별뽀바이</h2>
+                                            <p class="ban_com">최초의 라면과자! <br>
+                                                흉내낼 수 없는 맛~ 모방할 수 없는 맛~ <br>라면과자의 원조!
+                                                삼양 별뽀빠이</p>
                                         </div>
                                     </li>
                                     <li class="item4">
-                                        <img src="./images/brand05_visual.jpg" alt="유제품" class="pic">
+                                        <img src="./images/c4.jpg" alt="유제품" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">04</h2>
+                                            <h2 class="ban_tit2">삼양목장</h2>
+                                            <p class="ban_com">유기농우유</p>
                                         </div>
                                     </li>
                                     <li class="item5">
-                                        <img src="./images/source.jpg" alt="소스,간편식" class="pic">
+                                        <img src="./images/c5.jpg" alt="소스,간편식" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">05</h2>
+                                            <h2 class="ban_tit2">불닭소스</h2>
+                                            <p class="ban_com">불닭볶음면 매니아라면 누구나 꿈꾸던 <br> '불닭소스'가 출시되었습니다. <br>
+                                                불닭소스를 활용해 나만의 레시피를 즐겨보세요.</p>
                                         </div>
                                     </li>
                                     <li class="item6">
                                         <img src="./images/loading.png" alt="냉동" class="pic">
                                         <div class="ban_tit_box">
-                                            <h2 class="ban_tit1"></h2>
-                                            <h2 class="ban_tit2"></h2>
-                                            <p class="ban_com"></p>
+                                            <h2 class="ban_tit1">06</h2>
+                                            <h2 class="ban_tit2">냉동식품</h2>
+                                            <p class="ban_com">준비중입니다!</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -419,32 +506,239 @@
                 <h2 class="page_title" style="visibility: hidden;">호치와친구들</h2>
                 <div class="page_wrap">
                     <div class="tit_box">    
-                        <h3 class="sub_title">ESG</h3>
-                        <h2 class="main_title">SUSTAINABILITY</h2>
+                        <h3 class="sub_title">CHARACTER</h3>
+                        <h2 class="main_title">HOCHI&FRIEND</h2>
                     </div> 
-
-
+                    <article class="col_fr">
+                        <ul class="col_box">
+                            <li class="left">
+                                <p class="one_line"><span class="dot">호치와친구들</span></p>
+                                <img src="./images/hochi01.png" alt="호치와친구들" width="750px" height="320px"> 
+                            </li>
+                            <li class="right">
+                                <a href="" class="item1"><img src="./images/hochi1.png" alt="호치" width="40px" height="60px"> <span>호치 HOCHI</span></a>
+                                <a href="" class="item2"><img src="./images/neng1.png" alt="넹" width="40px" height="60px"><span>넹 NENG</span></a>
+                                <a href="" class="item3"><img src="./images/mozzi1.png" alt="묘찌" width="40px" height="60px"><span>묘찌 MOZZI</span></a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_title">삼양소식</h2>
+                <h2 class="page_title" style="display: none;">삼양소식</h2>
                 <div class="page_wrap">
+                    <div class="tit_box">    
+                        <h3 class="sub_title">PRESS</h3>
+                        <h2 class="main_title">NOW IS</h2>
+                    </div> 
+                    <a href="" class="more">+</a>
+<!-- article.board_fr>table.tbl>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com)-->
+
+                    <article class="board_fr">
+                        <table class="tbl">
+                            <today>
+                                <tr>
+                                    <td class="td1">5</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 강릉 산불 피해 지역에 라면 긴급 지원</h3>
+                                            <p class="td_com">삼양식품은 산불로 큰 피해를 입은 강릉 지역 이재민들에게 라면과 스낵 1만여개를 긴급 지원했다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">4</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 비빔면 신제품 ‘4과비빔면’ 출시</h3>
+                                            <p class="td_com">삼양식품이 비빔면 신제품 ‘4과비빔면’을 출시했다고 4일 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">3</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 식물성 단백질 음료 ‘프로틴드롭’ 출시</h3>
+                                            <p class="td_com">삼양식품은 식물성 건강 브랜드 ‘잭앤펄스(Jack & Pulse)’를 론칭하고, 첫번째 제품으로 식물성 단백질 음료 ‘프로틴드롭(ProteinDrop)’을 출시한다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">2</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">글로벌 시장 등에 업은 삼양식품, 외형·내실 다 잡았다</h3>
+                                            <p class="td_com">불닭으로 세계인의 입맛을 사로잡은 삼양식품이 지난해 해외사업부문의 폭발적인 성장으로 외형과 내실을 모두 챙겼다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">1</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 한-인도수교 50주년 맞아 주인도 대한민국 대사관 행사에 불닭볶음면 등 제품 500박스 협찬</h3>
+                                            <p class="td_com">삼양식품은 한국과 인도의 수교 50주년을 기념해 주인도 대한민국 대사관 행사 협찬을 통해 불닭볶음면 등 제품 500박스(14,800개) 현지 기부를 진행하고 있다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </today>
+                        </table>
+                    </article>
 
                 </div>
             </section>
             <section class="page" id="page5">
-                <h2 class="page_title">고객지원</h2>
+                <h2 class="page_title" style="display: none;">고객지원</h2>
                 <div class="page_wrap">
+                    <div class="tit_box">    
+                        <h3 class="sub_title">CS CENTER</h3>
+                        <h2 class="main_title">고객센터</h2>
+                    </div> 
+
+<!-- article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{상담하기})))*2-->    
+
+                    <article class="colm_fr">
+                        <h3 class="lst_tit">상담센터</h3>
+                        <ul class="lst1">
+                            <li class="item1">                          
+                                <h3 class="item_tit">고객만족센터</h3>
+                                <a href="" class="item_more">상담하기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">고객문의</h3>
+                                <a href="" class="item_more">문의하기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">FAQ</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                        </ul>
+                        <h3 class="lst_tit">홍보관</h3>
+                        <ul class="lst2">
+                            <li class="item1">
+                                <h3 class="item_tit">음원/영상</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">삼양역사관</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">레시피</h3>
+                                <a href="" class="item_more">보러가기</a>
+                            </li>
+                        </ul>
+                    </article>
 
                 </div>
             </section>
         </div>
         <footer class="ft">
-
+            <article class="row_row1">
+                <div class="ft_wrap">
+                    <nav class="fnb">
+                        <ul class="fnb_box">
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">법적고지</a></li>
+                            <li><a href="">이메일 무단수집 거부</a></li>
+                            <li><a href="">온라인 제보</a></li>
+                        </ul>
+                    </nav>
+                    <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                        <option value="">FAMILY SITE</option>
+                        <option value="https://www.samyangcorp.com/kr/index">삼양사</option>
+                        <option value="https://www.samnam.co.kr/kr/index">삼남석유화학</option>
+                        <option value="https://www.samyangkasei.com/kr/index">삼양화성</option>
+                        <option value="https://www.samyanginnochem.com/kr/index">삼양이노켐</option>
+                        <option value="https://www.samyangfinetechnology.com/kr/index">삼양화인테크놀로지</option>
+                        <option value="https://www.kciltd.com/kr/index">KCI</option>
+                        <option value="https://www.ncchem.co.kr/kr/index">엔씨켐</option>
+                        <option value="https://www.samyangpackaging.co.kr/kr/index">삼양패키징</option>
+                    </select>
+                    <script>
+                        function favo(s){
+                            var hs = s.value;
+                            if(hs!=""){
+                                window.open(hs, "팝업");
+                            }
+                        }
+                    </script>
+                </div>
+            </article>
+            <article class="row row2">
+                <div class="ft_wrap">
+                    <div class="slogan left">
+                        FOOD<br>
+                        BUSINESS PARTNER <br>
+                        CREATING <br>
+                        THE SUCCESS WAY
+                    </div>
+                    <nav class="ft_link_fr right">
+                        <dl class="ft_link item1">
+                            <dt>회사소개/dt>
+                            <dd><a href="">삼양식품</a></dd>
+                            <dd><a href="">지주사</a></dd>
+                            <dd><a href="">계열사</a></dd>
+                            <dd><a href="">해외법인</a></dd>
+                            <dd><a href="">공장</a></dd>
+                            <dd><a href="">오시는길</a></dd>
+                        </dl>
+                        <dl class="ft_link item2">
+                            <dt>홍보관</dt>
+                            <dd><a href="">삼양소식</a></dd>
+                            <dd><a href="">홍보영상</a></dd>
+                            <dd><a href="">호치와 친구들</a></dd>
+                            <dd><a href="">음원/영상</a></dd>
+                            <dd><a href="">엠버서더</a></dd>
+                            <dd><a href="">삼양역사관</a></dd>
+                            <dd><a href="">레시피</a></dd>
+                        </dl>
+                        <dl class="ft_link item3">
+                            <dt>지속가능경영</dt>
+                            <dd><a href="">안전보건환경</a></dd>
+                            <dd><a href="">윤리/인권경영</a></dd>
+                            <dd><a href="">소비자중심경영</a></dd>
+                            <dd><a href="">사회공헌</a></dd>
+                            <dd><a href="">지배구조</a></dd>
+                        </dl>
+                        <dl class="ft_link item4">
+                            <dt>브랜드</dt>
+                            <dd><a href="">삼양라면</a></dd>
+                            <dd><a href="">불닭볶음면</a></dd>
+                            <dd><a href="">짜짜로니</a></dd>
+                            <dd><a href="">별뽀빠이</a></dd>
+                            <dd><a href="">삼양유기농우유</a></dd>
+                        </dl>
+                        <dl class="ft_link item5">
+                            <dt>제품</dt>
+                            <dd><a href="">라면</a></dd>
+                            <dd><a href="">스낵</a></dd>
+                            <dd><a href="">유제품</a></dd>
+                            <dd><a href="">소스/간편식</a></dd>
+                            <dd><a href="">HMR(냉동)</a></dd>
+                        </dl>
+                        <dl class="ft_link item6">
+                            <dt>고객지원</dt>
+                            <dd><a href="">고객만족센터</a></dd>
+                            <dd><a href="">고객문의</a></dd>
+                            <dd><a href="">FAQ</a></dd>
+                        </dl>
+                    </nav>
+                </div>
+            </article>
+            <article class="row row3">
+                <div class="ft_wrap">
+                    <div class="ft_logo left"></div>
+                    <address class="copyright right">삼양식품(주) 서울특별시 성북구 오패산로3길 104(하월곡동) Copyright © Samyang Foods Co., Ltd All Rights Reserved.</address>
+                </div>
+            </article>
         </footer>
     </div>
     <div class="fix_area">
-
+        <a href="#page5" class="cir_box counsel">고객<br>상담센터</a>
+        <a href="#" class="cir_box totop">↑<br>TOP</a>
     </div>
 </body>
 </html>
