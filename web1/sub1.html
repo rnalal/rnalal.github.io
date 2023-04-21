@@ -34,10 +34,22 @@
     </style>
         <link rel="stylesheet" href="common.css">
         <link rel="stylesheet" href="sub_common.css">
+        <link rel="stylesheet" href="sublayout.css">
     <style>
         /* 내부 스타일 */
         .content {background-image: url("./images/title1.jpg");}
-        .left_tnb li:last-child::before { content:""; color:#2352; margin-right: 14px;}
+        .left_tnb li:last-child::before { content:""; }
+        #page1 .grid4 li {text-align: center; box-sizing: border-box; border: 1px solid #eee; height: 300px;}
+        #page1 .grid4 .grid_tit {font-size: 28px; font-weight: 200; color: #ff7300; padding-top: 50px;}
+        #page1 .grid4 .grid_tit:after {content: "";  display: block; clear: both; width: 80px;
+        height: 5px; background-color: #ff9900; margin: 30px auto;}
+        #page1 .grid4 .grid_com {padding-top: 14px;}
+        #page1 .page_wrap {text-align:center; padding-top: 30px; line-height: 30px;}
+
+        #page2 {background-image: url("./images/intro_02.png"); background-position: center center;
+        background-size: 100% auto; background-attachment: fixed; }
+        #page2 .page_comment {text-shadow: 1px 1px 3px #333; color: #fff; line-height: 30px; width: 1300px; text-align: center;}
+        #page2 .page_comment_1 {text-shadow: 1px 1px 3px #ff7300; color: #fff; font-size: 25px; width: 1300px;  text-align: center;}
     </style>
     
 </head>
@@ -46,6 +58,7 @@
         <header class="hd">
             <nav class="tnb">
                 <div class="tnb_wrap">
+
                     <ul class="left_tnb">
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
@@ -69,7 +82,7 @@
                                 <div class="sub item1">
                                     <ul class="dp2">
                                         <li><a href="">삼양식품</a></li>
-                                        <li><a href="">자주사</a></li>
+                                        <li><a href="">사업영역</a></li>
                                         <li><a href="">계열사</a></li>
                                         <li><a href="">해외법인</a></li>
                                         <li><a href="">공장</a></li>
@@ -139,43 +152,48 @@
             <input type="checkbox" id="sitemap_ck">
             <div class="sitemap">
                 <div class="sitemap_fr">
-                    <label for=""sitemap_ck" class="close_btn">닫기</label>            
+                    <label for="sitemap_ck" class="close_btn">닫기</label>            
                     <div id="realtedSites">
                         <ul class="selectul">
-                            <li class="group">삼양그룹
+                            <li class="group">삼양
                                 <ul>
-                                    <li><a href="" target="_blank" title="새 창">삼양식품</a></li>
+                                    <li><a href="https://www.samyang.co.kr/kr/index" target="_blank" title="새 창">삼양그룹</a></li>
                                 </ul>
                             </li>
                             <li class="group">식품 &amp; 식품서비스
                                 <ul>
-                                    <li><a href="" target="_blank" title="새 창">CJ제일제당식품></a></li>
-                                    <li><a href="" target="_blank" title="새 창">CJ푸드빌</a></li>
-                                    <li><a href="/" class="self">CJ프레시웨이</a></li>
+                                    <li><a href="https://brand.naver.com/syfoodshop" target="_blank" title="새 창">삼양맛샵</a></li>
+                                    <li><a href="https://www.samyangfarm.co.kr/" target="_blank" title="새 창">삼양목장</a></li>
+                                    <li><a href="http://samyangflour.com/" target="_blank" title="새 창">삼양제분</a></li>
+                                    <li><a href="/" class="self">삼양식품</a></li>
                                 </ul>
                             </li>
-                            <li class="group">물산 &amp; 신유통
+                            <li class="group">화학 &amp; 화학사업
                                 <ul>
-                                    <li><a href="" target="_blank" title="새 창">CJ제일제당식품></a></li>
-                                    <li><a href="" target="_blank" title="새 창">CJ푸드빌</a></li>
+                                    <li><a href="https://www.samyangcorp.com/kr/index" target="_blank" title="새 창">삼양사</a></li>
+                                    <li><a href="https://www.samnam.co.kr/kr/index" target="_blank" title="새 창">삼남석유화학</a></li>
+                                    <li><a href="https://www.samyangkasei.com/kr/index" target="_blank" title="새 창">삼양화성</a></li>
+                                    <li><a href="https://www.samyanginnochem.com/kr/index" target="_blank" title="새 창">삼양이노켐</a></li>
+                                    <li><a href="https://www.samyangfinetechnology.com/kr/index" target="_blank" title="새 창">삼양화인테크놀로지</a></li>
+                                    <li><a href="https://www.kciltd.com/kr/index" target="_blank" title="새 창">KCI</a></li>
+                                    <li><a href="https://www.ncchem.co.kr/kr/index" target="_blank" title="새 창">엔씨켐</a></li>
                                 </ul>
                             </li>
-                            <li class="group">엔터테인먼트 &amp; 미디어
+                            <li class="group">재단
                                 <ul>
-                                    <li><a href="" target="_blank" title="새 창">CJ제일제당식품></a></li>
-                                    <li><a href="" target="_blank" title="새 창">CJ푸드빌</a></li>
+                                    <li><a href="http://www.sy-igdream.or.kr/" target="_blank" title="새 창">삼양이건장학재단</a></li>
+                                    <li><a href="http://www.samyangmotivef.or.kr/" target="_blank" title="새 창">삼양원동문화재단</a></li>
                                 </ul>
                             </li>
-                            <li class="group">글로벌 법인
+                            <li class="group">의약바이오
                                 <ul>
-                                    <li><a href="" target="_blank" title="새 창">CJ제일제당식품></a></li>
-                                    <li><a href="" target="_blank" title="새 창">CJ푸드빌</a></li>
+                                    <li><a href="https://samyangbiopharm.com/kr/index" target="_blank" title="새 창">삼양홀딩스 바이오팜그룹</a></li>
                                 </ul>
                             </li>
                         </ul>  
                     </div>
-                 </div>
-            </div>     
+                </div>
+            </div>
         </header>
         <div class="content">
             <figure class="vs">
@@ -184,23 +202,81 @@
                 </div>
             </figure>
             <section class="page" id="page1">
-                <h2 class="page_tit">회사소개</h2>
-                <div class="page_wrap"></div>
+                <h2 class="page_tit">삼양식품</h2>
+                <div class="page_wrap">
+                    <p class="page_comment">1961년 창업한 삼양식품은 '정직과 신용'의 창업정신으로 한국 식품산업의 새로운 영역을 개척하며 성장해왔습니다.<br>
+                    식품으로 인간 백세시대를 열겠다는 故전중윤 선대회장의 뜻을 이어받아 1960년대 식량난 극복과 1970년대 식생활 개선에 앞장섰으며, 
+                    <br>현재는 한국의 맛과 문화를 담은 제품으로 한국 식품의 우수성을 전 세계에 알리며 글로벌 종합식품기업으로 도약하고 있습니다. <br>
+                    삼양식품은 안전하고 건강한 먹거리를 만드는 정직한 기업, 사회로부터 신회받는 기업이 되기 위해 최선의 노력을 다하겠습니다.</p>
+                    <article class="grid4">
+                        <ul class="grid_box">
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit">슬로건</h3>
+                                    <p class="grid_com">delicious together<br>
+                                        고객에 대한 감사와 사랑</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit">비전</h3>
+                                    <p class="grid_com">Excellence in Taste<br>
+                                    최고의 맛/멋있는 기업</p>
+                                </div>                           
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit">미션</h3>
+                                    <p class="grid_com">Re-Creation<br>
+                                    신사업/제품개발의 창의성</p>
+                                </div>                           
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit">가치체계</h3>
+                                    <p class="grid_com">Honesty & Integrity<br>
+                                    정직과 신용</p>
+                                </div>                           
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </section>
             <section class="page" id="page2">
                 <h2 class="page_tit">사업영역</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                        <p class="page_comment_1">1963년 9월, 국내 최초의 라면 ‘삼양라면’을 생산하다<img src="./images/intro_01.png" width="200px"><br><br><br></p> 
+                        <p class="page_comment"> 
+                        유일한 주식이었던 쌀과 잡곡, 그것마저도 부족하여 허리띠를 졸라매야 했던 1960년대. <br>
+                        故전중윤 선대회장은 먹을 것이 없어 미군이 버린 음식을 끓여 만든 ‘꿀꿀이죽’으로
+                        한끼를 때우는 사람들의 모습을 보고, 식량난 해결 방안을 모색했습니다.<br><br>
+
+                        그 묘안으로 ‘라면’을 떠올린 전 선대회장은 직접 일본의 묘조식품을 찾아가 기계와 기술을
+                        도입했고, <br>마침내 1963년 9월 15일 국내 최초의 라면 ‘삼양라면’이 탄생했습니다.<br><br>
+
+                        이후 라면은 제2의 주식으로 자리매김하며 새로운 식문화를 정착시켰고,<br>
+                        삼양식품은 소비자들의 다양한 니즈를 만족시키는 새로운 맛의 라면으로 시장을 개척하며
+                        트렌드를 선도하고 있습니다.<br>
+                       </p>  
+                </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_tit">역량/인프라</h2>
+                <h2 class="page_tit">계열사</h2>
                 <div class="page_wrap"></div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_tit">브랜드</h2>
+                <h2 class="page_tit">해외법인</h2>
                 <div class="page_wrap"></div>
-             </section>
+            </section>
+            <section class="page" id="page5">
+                <h2 class="page_tit">공장</h2>
+                <div class="page_wrap"></div>
+            </section>
+            <section class="page" id="page6">
+                <h2 class="page_tit">오시는길</h2>
+                <div class="page_wrap"></div>
+            </section>
         </div>
-
         <footer class="ft">
             <article class="row_row1">
                 <div class="ft_wrap">
@@ -215,14 +291,13 @@
                     </nav>
                     <select name="favo" id="favo" class="favo right" onchange="favo(this)">
                         <option value="">FAMILY SITE</option>
-                        <option value="https://www.samyangcorp.com/kr/index">삼양사</option>
-                        <option value="https://www.samnam.co.kr/kr/index">삼남석유화학</option>
-                        <option value="https://www.samyangkasei.com/kr/index">삼양화성</option>
-                        <option value="https://www.samyanginnochem.com/kr/index">삼양이노켐</option>
-                        <option value="https://www.samyangfinetechnology.com/kr/index">삼양화인테크놀로지</option>
-                        <option value="https://www.kciltd.com/kr/index">KCI</option>
-                        <option value="https://www.ncchem.co.kr/kr/index">엔씨켐</option>
-                        <option value="https://www.samyangpackaging.co.kr/kr/index">삼양패키징</option>
+                        <option value="https://brand.naver.com/syfoodshop">삼양맛샵</option>
+                        <option value="https://www.samyangfarm.co.kr/">삼양목장</option>
+                        <option value="http://www.sy-igdream.or.kr/">삼양이건장학재단</option>
+                        <option value="http://www.samyangmotivef.or.kr/">삼양원동문화재단</option>
+                        <option value="http://www.samyanglogistics.co.kr/">삼양로지스틱스</option>
+                        <option value="http://samyangpruwell.com/">삼양프루웰</option>
+                        <option value="http://samyangflour.com/">삼양제분</option>
                     </select>
                     <script>
                         function favo(s){

@@ -63,7 +63,7 @@
                                 <div class="sub item1">
                                     <ul class="dp2">
                                         <li><a href="">삼양식품</a></li>
-                                        <li><a href="">자주사</a></li>
+                                        <li><a href="">사업영역</a></li>
                                         <li><a href="">계열사</a></li>
                                         <li><a href="">해외법인</a></li>
                                         <li><a href="">공장</a></li>
@@ -127,17 +127,55 @@
                             </li>
                         </ul>     
                     </nav>
-                    <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
+                    <label for="sitemap_ck" class="sitemap_btn" title="관계 사이트">관계 사이트</label>
                 </div>
             </div>
-            <input type=""checkbox" id="sitemap_ck">
+            <input type="checkbox" id="sitemap_ck">
             <div class="sitemap">
                 <div class="sitemap_fr">
-                    <label for=""sitemap_ck" class="close_btn">닫기</label>
-                    여기는 사이트 맵
+                    <label for="sitemap_ck" class="close_btn">닫기</label>
+                    <div id="realtedSites">
+                        <ul class="selectul">
+                            <li class="group">삼양
+                                <ul>
+                                    <li><a href="https://www.samyang.co.kr/kr/index" target="_blank" title="새 창">삼양그룹</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">식품 &amp; 식품서비스
+                                <ul>
+                                    <li><a href="https://brand.naver.com/syfoodshop" target="_blank" title="새 창">삼양맛샵</a></li>
+                                    <li><a href="https://www.samyangfarm.co.kr/" target="_blank" title="새 창">삼양목장</a></li>
+                                    <li><a href="http://samyangflour.com/" target="_blank" title="새 창">삼양제분</a></li>
+                                    <li><a href="/" class="self">삼양식품</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">화학 &amp; 화학사업
+                                <ul>
+                                    <li><a href="https://www.samyangcorp.com/kr/index" target="_blank" title="새 창">삼양사</a></li>
+                                    <li><a href="https://www.samnam.co.kr/kr/index" target="_blank" title="새 창">삼남석유화학</a></li>
+                                    <li><a href="https://www.samyangkasei.com/kr/index" target="_blank" title="새 창">삼양화성</a></li>
+                                    <li><a href="https://www.samyanginnochem.com/kr/index" target="_blank" title="새 창">삼양이노켐</a></li>
+                                    <li><a href="https://www.samyangfinetechnology.com/kr/index" target="_blank" title="새 창">삼양화인테크놀로지</a></li>
+                                    <li><a href="https://www.kciltd.com/kr/index" target="_blank" title="새 창">KCI</a></li>
+                                    <li><a href="https://www.ncchem.co.kr/kr/index" target="_blank" title="새 창">엔씨켐</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">재단
+                                <ul>
+                                    <li><a href="http://www.sy-igdream.or.kr/" target="_blank" title="새 창">삼양이건장학재단</a></li>
+                                    <li><a href="http://www.samyangmotivef.or.kr/" target="_blank" title="새 창">삼양원동문화재단</a></li>
+                                </ul>
+                            </li>
+                            <li class="group">의약바이오
+                                <ul>
+                                    <li><a href="https://samyangbiopharm.com/kr/index" target="_blank" title="새 창">삼양홀딩스 바이오팜그룹</a></li>
+                                </ul>
+                            </li>
+                        </ul>  
+                    </div>
                 </div>
             </div>
-        </header>
+    </header>
         <div class="content">
             <figure class="vs">
                 <div class="img_box">
@@ -418,14 +456,13 @@
                     </nav>
                     <select name="favo" id="favo" class="favo right" onchange="favo(this)">
                         <option value="">FAMILY SITE</option>
-                        <option value="https://www.samyangcorp.com/kr/index">삼양사</option>
-                        <option value="https://www.samnam.co.kr/kr/index">삼남석유화학</option>
-                        <option value="https://www.samyangkasei.com/kr/index">삼양화성</option>
-                        <option value="https://www.samyanginnochem.com/kr/index">삼양이노켐</option>
-                        <option value="https://www.samyangfinetechnology.com/kr/index">삼양화인테크놀로지</option>
-                        <option value="https://www.kciltd.com/kr/index">KCI</option>
-                        <option value="https://www.ncchem.co.kr/kr/index">엔씨켐</option>
-                        <option value="https://www.samyangpackaging.co.kr/kr/index">삼양패키징</option>
+                        <option value="https://brand.naver.com/syfoodshop">삼양맛샵</option>
+                        <option value="https://www.samyangfarm.co.kr/">삼양목장</option>
+                        <option value="http://www.sy-igdream.or.kr/">삼양이건장학재단</option>
+                        <option value="http://www.samyangmotivef.or.kr/">삼양원동문화재단</option>
+                        <option value="http://www.samyanglogistics.co.kr/">삼양로지스틱스</option>
+                        <option value="http://samyangpruwell.com/">삼양프루웰</option>
+                        <option value="http://samyangflour.com/">삼양제분</option>
                     </select>
                     <script>
                         function favo(s){
