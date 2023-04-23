@@ -138,5 +138,5 @@ color:#a0a0a0;}
 .fix_area .cir_box { display: block; width: 60px; height: 60px; text-align: center;
 border-radius: 35px; box-sizing: border-box; padding: 6px; font-size: 12px; padding-top: 15px;
 overflow: hidden; box-shadow: 1px 1px 6px #333; }
-.fix_area .counsel { background-color: rgba(255,255,255,0.75); color: #333;}
-.fix_area .toptop { background-color: #ff9900; color: #fff; margin-top: 20px;} 
+.fix_area .counsel { background-color:rgba(255,255,255,0.75);  color: #333;}
+.fix_area .totop { background-color: #ff9900; color: #fff; margin-top: 20px;} 

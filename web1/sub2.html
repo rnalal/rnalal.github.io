@@ -39,33 +39,26 @@
         /* 내부 스타일 */
         .content {background-image: url("./images/title1.jpg");}
         .left_tnb li:last-child::before { content:""; }
-        #page1 .grid4 li {text-align: center; box-sizing: border-box; border: 1px solid #eee; height: 300px;}
-        #page1 .grid4 .grid_tit {font-size: 28px; font-weight: 200; color: #ff7300; padding-top: 50px;}
-        #page1 .grid4 .grid_tit:after {content: "";  display: block; clear: both; width: 80px;
-        height: 5px; background-color: #ff9900; margin: 30px auto;}
-        #page1 .grid4 .grid_com {padding-top: 14px;}
-        #page1 .page_wrap {text-align:center; padding-top: 30px; line-height: 30px;}
-
-        #page2 {background-image: url("./images/intro_02.png"); background-position: center center;
-        background-size: 100% auto; background-attachment: fixed; }
-        #page2 .page_comment {text-shadow: 1px 1px 3px #333; color: #fff; line-height: 30px; width: 1300px; text-align: center;}
-        #page2 .page_comment_1 {text-shadow: 1px 1px 3px #ff7300; color: #fff; font-size: 25px; width: 1300px;  text-align: center;}
-
-        #page3 .grid4 li {text-align: center; box-sizing: border-box; border: 1px solid #eee; height: 300px;}
-        #page3 .grid4 .grid_tit {font-size: 28px; font-weight: 200; color: #ff7300; padding-top: 50px;}
-        #page3 .grid4 .grid_tit:after {content: "";  display: block; clear: both; width: 80px;
-        height: 5px; background-color: #ff9900; margin: 30px auto;}
-        #page3 .grid4 .grid_com {padding-top: 14px;}
-        #page3 .page_wrap {text-align:center; padding-top: 30px; line-height: 30px;}
-
-        #page4 .page_wrap a { clear:both;}
-
-        #page5 .grid3 li {text-align: center; box-sizing: border-box; border: 1px solid #eee; height: 300px;}
-        #page5 .grid3 .grid_tit {font-size: 28px; font-weight: 200; color: #ff7300; padding-top: 50px;}
-        #page5 .grid3 .grid_tit:after {content: "";  display: block; clear: both; width: 80px;
-        height: 5px; background-color: #ff9900; margin: 30px auto;}
-        #page5 .grid3 .grid_com {padding-top: 14px;}
-        #page5 .page_wrap {text-align:center; padding-top: 30px; line-height: 30px;}
+        #page1 { background-color: #fff; color:#333;}
+        #page1 .tit_box {clear: both; padding-top: 80px; width: 1280px; margin: 0 auto;}
+        .more{display: block; position: absolute; top: 60px; right: 200px; font-size: 68px; font-weight: bolder;
+        width: 80px; height: 80px; border: 1px solid #ccc; text-align: center; color: #999;}
+        .board_fr { clear: both; width: 1280px; margin: 0px auto; padding-top: 40px;}
+        .tb1 { clear: both; display: table; border-collapse: collapse;}
+        .tbl tr { display: table-row; width: 1280px;}
+        .tbl td {display: table-cell; min-height: 50px; padding-top: 20px; padding-bottom: 20px;
+        border-top: 1px solid #ccc;}
+        .tbl tr:last-child td { border-bottom:1px solid #ccc;}
+        .tbl td.td1 { vertical-align: top; width: 100px; text-align:  left; font-size: 32px;
+        color: #ff9900; font-weight: 100;}
+        .tbl td a { display: block; color: #333; transition-duration: 0.4s;}
+        .tbl td a .td_tit { width: 1100px; font-size: 28px; line-height: 1.4; font-weight: 200; padding-right: 20;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .tbl td a .td_com { width: 1100px; font-size: 18px; line-height: 2.2; font-weight: 100;
+        color: #999; padding-right: 36px;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+        .tbl td a:hover { color:#ff9900;}
+        .tbl td a:hover .td_com { color:#ff9900;}
 
     </style>
     
@@ -77,8 +70,8 @@
                 <div class="tnb_wrap">
 
                     <ul class="left_tnb">
-                        <li><a href="login.html">로그인</a></li>
-                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
                     </ul>
                     <ul class="right_tnb">
                         <li><a href="https://blog.naver.com/samyangfoods" class="sns1">A1</a></li>
@@ -216,52 +209,52 @@
         <div class="content">
             <figure class="vs">
                 <div class="img_box">
-                    <h1 class="tit">회사소개</h1>
+                    <h1 class="tit">홍보관</h1>
                 </div>
             </figure>
             <section class="page" id="page1">
-                <h2 class="page_tit">삼양식품</h2>
+                <h2 class="page_tit">삼양소식</h2>
                 <div class="page_wrap">
-                    <p class="page_comment">1961년 창업한 삼양식품은 '정직과 신용'의 창업정신으로 한국 식품산업의 새로운 영역을 개척하며 성장해왔습니다.<br>
-                    식품으로 인간 백세시대를 열겠다는 故전중윤 선대회장의 뜻을 이어받아 1960년대 식량난 극복과 1970년대 식생활 개선에 앞장섰으며, 
-                    <br>현재는 한국의 맛과 문화를 담은 제품으로 한국 식품의 우수성을 전 세계에 알리며 글로벌 종합식품기업으로 도약하고 있습니다. <br>
-                    삼양식품은 안전하고 건강한 먹거리를 만드는 정직한 기업, 사회로부터 신회받는 기업이 되기 위해 최선의 노력을 다하겠습니다.</p>
-                    <article class="grid4">
-                        <ul class="grid_box">
-                            <li>
-                                <div>
-                                    <h3 class="grid_tit">슬로건</h3>
-                                    <p class="grid_com">delicious together<br>
-                                        고객에 대한 감사와 사랑</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3 class="grid_tit">비전</h3>
-                                    <p class="grid_com">Excellence in Taste<br>
-                                    최고의 맛/멋있는 기업</p>
-                                </div>                           
-                            </li>
-                            <li>
-                                <div>
-                                    <h3 class="grid_tit">미션</h3>
-                                    <p class="grid_com">Re-Creation<br>
-                                    신사업/제품개발의 창의성</p>
-                                </div>                           
-                            </li>
-                            <li>
-                                <div>
-                                    <h3 class="grid_tit">가치체계</h3>
-                                    <p class="grid_com">Honesty & Integrity<br>
-                                    정직과 신용</p>
-                                </div>                           
-                            </li>
-                        </ul>
+                    <a href="" class="more">+</a>
+<!-- article.board_fr>table.tbl>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com)-->
+
+                    <article class="board_fr">
+                        <table class="tbl">
+                            <today>
+                                <tr>
+                                    <td class="td1">3</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 식물성 단백질 음료 ‘프로틴드롭’ 출시</h3>
+                                            <p class="td_com">삼양식품은 식물성 건강 브랜드 ‘잭앤펄스(Jack & Pulse)’를 론칭하고, 첫번째 제품으로 식물성 단백질 음료 ‘프로틴드롭(ProteinDrop)’을 출시한다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">2</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">글로벌 시장 등에 업은 삼양식품, 외형·내실 다 잡았다</h3>
+                                            <p class="td_com">불닭으로 세계인의 입맛을 사로잡은 삼양식품이 지난해 해외사업부문의 폭발적인 성장으로 외형과 내실을 모두 챙겼다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">1</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">삼양식품, 한-인도수교 50주년 맞아 주인도 대한민국 대사관 행사에 불닭볶음면 등 제품 500박스 협찬</h3>
+                                            <p class="td_com">삼양식품은 한국과 인도의 수교 50주년을 기념해 주인도 대한민국 대사관 행사 협찬을 통해 불닭볶음면 등 제품 500박스(14,800개) 현지 기부를 진행하고 있다고 밝혔다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </today>
+                        </table>
                     </article>
                 </div>
             </section>
             <section class="page" id="page2">
-                <h2 class="page_tit">사업영역</h2>
+                <h2 class="page_tit">홍보영상</h2>
                 <div class="page_wrap">
                         <p class="page_comment_1">1963년 9월, 국내 최초의 라면 ‘삼양라면’을 생산하다<img src="./images/intro_01.png" width="200px"><br><br><br></p> 
                         <p class="page_comment"> 
@@ -279,7 +272,7 @@
                 </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_tit">계열사</h2>
+                <h2 class="page_tit">호치와 친구들</h2>
                 <div class="page_wrap">
                     <article class="grid4">
                         <ul class="grid_box">
@@ -316,7 +309,7 @@
                 </div>
             </section>
             <section class="page" id="page4">
-                <h2 class="page_tit">해외법인</h2><br><br><br>
+                <h2 class="page_tit">음원/영상</h2><br><br><br>
                 <div class="page_wrap">
                     <a href=""><img src="./images/china.jpg" alt="중국" width="400px" height="300px"></a> &nbsp;&nbsp;
                     <a href=""><img src="./images/america.jpg" alt="아메리카" width="400px" height="300px"></a> &nbsp;&nbsp;
@@ -324,7 +317,7 @@
                 </div>
             </section>
             <section class="page" id="page5">
-                <h2 class="page_tit">공장</h2>
+                <h2 class="page_tit">삼양역사관</h2>
                 <div class="page_wrap">
                     <article class="grid3">
                         <ul class="grid_box">
@@ -351,7 +344,45 @@
                 </div>
             </section>
             <section class="page" id="page6">
-                <h2 class="page_tit">오시는길</h2>
+                <h2 class="page_tit">엠버서더</h2>
+                <div class="page_wrap">
+
+                    <div id="map" style="width:100%;height:350px;"></div>
+
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=09367983021caebe60f252a9dd2c5e16"></script>
+                    <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(37.60979855030343, 127.03411260573779), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    
+                    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+                    var map = new kakao.maps.Map(mapContainer, mapOption); 
+                    </script>
+                </div>
+            </section>
+            <section class="page" id="page6">
+                <h2 class="page_tit">삼양역사관</h2>
+                <div class="page_wrap">
+
+                    <div id="map" style="width:100%;height:350px;"></div>
+
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=09367983021caebe60f252a9dd2c5e16"></script>
+                    <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(37.60979855030343, 127.03411260573779), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    
+                    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+                    var map = new kakao.maps.Map(mapContainer, mapOption); 
+                    </script>
+                </div>
+            </section>
+            <section class="page" id="page6">
+                <h2 class="page_tit">레시피</h2>
                 <div class="page_wrap">
 
                     <div id="map" style="width:100%;height:350px;"></div>
