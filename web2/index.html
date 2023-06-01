@@ -1,0 +1,175 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="subject" content="Benito">
+    <meta name="keywords" content="Benito, 가디건, 블라우스, 슬랙스, 옷, 쇼핑몰">
+    <meta name="description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="author" content="jy">
+
+    <link rel="shortcut icon" href="/pro02/img_1/logo1.png">
+
+    <meta name="og:site_name" content="Benito">
+    <meta name="og:title" content="Benito">
+    <meta name="og:description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="og:url" content="https://www.benito.com">
+    <meta name="og:image" content="/pro02/img/thumbnail.png">
+
+    <!--기본 폰트 및 초기화 로딩-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    
+ 	<!-- jquery cdn -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+
+<title>메인 페이지</title>
+<style>
+.container-fluid { width:1280px; }
+</style>
+</head>
+<body>
+<header id="hd" class="container">
+	<div class="container-fluid">
+		<nav id="tnb" class="navbar navbar-default">
+			<ul class="nav navbar-nav navbar-right" style="padding-right:40px">
+				
+					<li><a href="/pro02/UserLogin.do">로그인</a></li>
+					<li><a href="/pro02/UserTerms.do">회원가입</a></li>
+				
+				
+			</ul>			
+		</nav>
+	</div>
+	<div class="container-fluid" style="padding-right:30px;">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/pro02">BENITO</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" date-toggle="tab-hover" role="tablist">
+						<li class="active"><a href="/pro02/ShopIntro.do">BENITO<span class="sr-only">(current)</span></a></li>
+						<li><a href="/pro02/NoticeList.do">공지사항</a></li>
+						<li class="dropdown">
+							<a href="/pro02/ProductList.do?cate=01" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OUTER <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/pro02/ProductList.do?cate=0101">코트</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0102">패딩</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0103">자켓</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0104">트위드</a></li>
+							</ul>
+						</li>		
+						<li class="dropdown">
+							<a href="/pro02/ProductList.do?cate=02" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DRESS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/pro02/ProductList.do?cate=0201">데일리</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0202">롱</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0203">미니</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0204">레이스</a></li>
+							</ul>
+						</li>	
+						<li class="dropdown">
+							<a href="/pro02/ProductList.do?cate=03" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BLOUSE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/pro02/ProductList.do?cate=0301">무지</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0302">셔츠</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0303">슬리브리스</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0304">프릴</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0305">타이</a></li>
+							</ul>
+						</li> 
+						<li class="dropdown">
+							<a href="/pro02/ProductList.do?cate=04" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">KNIT/TEE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/pro02/ProductList.do?cate=0401">에브리데이T</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0402">니트</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0403">가디건</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0404">티</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="/pro02/ProductList.do?cate=04" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PANTS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/pro02/ProductList.do?cate=0501">데님</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0502">슬랙스</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0503">멜팅트레이닝</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0504">숏팬츠</a></li>
+								<li class="divider"></li>
+								<li><a href="/pro02/ProductList.do?cate=0505">점프수트</a></li>
+							</ul>
+						</li>
+					<li class="dropdown">
+     		    	<a href="/pro02/NoticeList.do"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+			        <ul class="dropdown-menu" role="menu">
+			            <li><a href="/pro02/NoticeList.do">공지사항</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/pro02/FaqList.do">자주하는 질문</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/pro02/QnaList.do">묻고 답하기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/pro02/ReviewList.do">이용후기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/pro02/DataList.do">자료실</a></li>
+			        </ul>
+     		    </li>
+					</ul>					
+							
+				</div>				
+			</div>
+		</nav>
+	</div>
+</header>		
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px; ">
+	<section class="page">
+		<div class="container-fluid">
+			<h2 class="title">메인 페이지 콘텐츠</h2>
+		</div>
+	</section>
+</div>
+<footer class="ft" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+	<div class="containter-fluid ft_wrap">
+		<p style="font-weight:bold;">Copyright © 베니토 ALL RIGHTS RESERVED</p>
+	</div>
+</footer>
+</body>
+</html>
