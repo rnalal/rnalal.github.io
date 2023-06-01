@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="subject" content="Benito">
+    <meta name="keywords" content="Benito, 가디건, 블라우스, 슬랙스, 옷, 쇼핑몰">
+    <meta name="description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="author" content="jy">
+
+    <link rel="shortcut icon" href="/pro02/img_1/logo1.png">
+
+    <meta name="og:site_name" content="Benito">
+    <meta name="og:title" content="Benito">
+    <meta name="og:description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="og:url" content="https://www.benito.com">
+    <meta name="og:image" content="/pro02/img/thumbnail.png">
+
+    <!--기본 폰트 및 초기화 로딩-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    
+ 	<!-- jquery cdn -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+
+<title>상품 목록</title>
+<style>
+.container-fluid { width:1280px;}
+.container-fluid a { text-decoration-line:none; }
+.letter :hover { background-color:rgb(200, 230, 255); }
+.thumbnail { height:520px; }
+.comment { width:auto; height:60px; overflow: hidden;  text-overflow: ellipsis; 
+ display: -webkit-box;  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; text-align:center; color:black;}
+.thumb_box { width:205px; margin:24px auto; margin-bottom:10px; height:auto; overflow:hidden;
+padding-top:5px; padding-bottom:5px; 
+border:1px solid #e0e0f0; text-align:center; }
+.thumb_box::after { content:""; display:block; clear:both; }
+.thumb_box img { width:auto; height:193px; }  
+.but { display:block; position: relative; width:150px; padding-left:75px;}
+</style>
+</head>
+<body>
+<header id="hd" class="container">
+	<div class="container-fluid">
+		<nav id="tnb" class="navbar navbar-default">
+			<ul class="nav navbar-nav navbar-right" style="padding-right:40px">				
+					<li><a href="/pro02/UserLogin.do">로그인</a></li>
+					<li><a href="/pro02/UserTerms.do">회원가입</a></li>				
+			</ul>			
+		</nav>
+	</div>
+	<div class="container-fluid" style="padding-right:30px;">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/pro02">BENITO</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" date-toggle="tab-hover" role="tablist">
+						<li class="active"><a href="index.html">BENITO<span class="sr-only">(current)</span></a></li>
+						<li><a href="noticelist.html">공지사항</a></li>
+						<li class="dropdown">
+							<a href="cate1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OUTER <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0101.html">코트</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0102.html">패딩</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0103.html">자켓</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0104.html">트위드</a></li>
+							</ul>
+						</li>		
+						<li class="dropdown">
+							<a href="cate2.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DRESS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0201.html">데일리</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0202.html">롱</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0203.html">미니</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0204.html">레이스</a></li>
+							</ul>
+						</li>	
+						<li class="dropdown">
+							<a href="cate3.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BLOUSE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0301.html">무지</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0302.html">셔츠</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0303.html">슬리브리스</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0304.html">프릴</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0305.html">타이</a></li>
+							</ul>
+						</li> 
+						<li class="dropdown">
+							<a href="cate4.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">KNIT/TEE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0401.html">에브리데이T</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0402.html">니트</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0403.html">가디건</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0404.html">티</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="cate5.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PANTS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0501.html">데님</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0502.html">슬랙스</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0503.html">멜팅트레이닝</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0504.html">숏팬츠</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0505.html">점프수트</a></li>
+							</ul>
+						</li>
+					<li class="dropdown">
+     		    	<a href="noticelist.html"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+			        <ul class="dropdown-menu" role="menu">
+			            <li><a href="noticelist.html">공지사항</a></li>
+			            <li class="divider"></li>
+			            <li><a href="faqlist.html">자주하는 질문</a></li>
+			            <li class="divider"></li>
+			            <li><a href="qnalist.html">묻고 답하기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="reviewlist.html">이용후기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="datalist.html">자료실</a></li>
+			        </ul>
+     		    </li>
+					</ul>					
+							
+				</div>				
+							
+				</div>				
+			</div>
+		</nav>
+	</div>
+</header>	
+	
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px; ">
+	<div class="container-fluid">
+		<h3>상품 - 코트</h3>
+		<br><hr><br>
+		
+		<article class="row">
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='/pro02/product/img_1/coat1.jpg' alt="세느아 노카라 트렌치 코트"/>
+					</div>
+					<div class="caption">
+						<a href="productdetail0101.html">
+							<h4 style="color:black; text-align:center;"><span class="letter"><strong>세느아 노카라 트렌치 코트</strong></span></h4>
+							<p class="comment"><span style="background-color:rgb(210, 232, 250);">베니토의 취향과 어울리는 트렌치! 클래식한 무드로 룩을 완성해줄꺼예요!</span></p><hr>
+							<p style="color:black; text-align:center;"><strong>수량</strong> :
+								
+								5
+							</p>
+							<p style="color:black; text-align:center;"><strong>가격</strong> : ￦108,500</p>
+						</a>
+						<div class="btn-group">
+							<div class="but">
+							
+									<a href="insertbasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='/pro02/product/img_1/coat2.jpg' alt="에르안 무스탕 자켓"/>
+					</div>
+					<div class="caption">
+						<a href="productdetail0102.html">
+							<h4 style="color:black; text-align:center;"><span class="letter"><strong>에르안 무스탕 자켓</strong></span></h4>
+							<p class="comment"><span style="background-color:rgb(210, 232, 250);"> 러블리함과 여성스러운 무드를 동시에 연출해주는 폭닥폭닥한 무스탕</span></p><hr>
+							<p style="color:black; text-align:center;"><strong>수량</strong> :
+								
+								9
+							</p>
+							<p style="color:black; text-align:center;"><strong>가격</strong> : ￦117,000</p>
+						</a>
+						<div class="btn-group">
+							<div class="but">
+							
+									<a href="insertbasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='/pro02/product/img_1/coat3.jpg' alt="로안 크롭 트렌치 코트"/>
+					</div>
+					<div class="caption">
+						<a href="productdetail0103.html">
+							<h4 style="color:black; text-align:center;"><span class="letter"><strong>로안 크롭 트렌치 코트</strong></span></h4>
+							<p class="comment"><span style="background-color:rgb(210, 232, 250);"> 모던하고 깔끔함 그 자체인 크롭 트렌츠 코트</span></p><hr>
+							<p style="color:black; text-align:center;"><strong>수량</strong> :
+								
+								3
+							</p>
+							<p style="color:black; text-align:center;"><strong>가격</strong> : ￦76,300</p>
+						</a>
+						<div class="btn-group">
+							<div class="but">
+							
+									<a href="insertbasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='productdetail0104.html' alt="Be Label 클래식 트렌치코트"/>
+					</div>
+					<div class="caption">
+						<a href="/pro02/ProductDetail.do?pcode=01010004">
+							<h4 style="color:black; text-align:center;"><span class="letter"><strong>Be Label 클래식 트렌치코트</strong></span></h4>
+							<p class="comment"><span style="background-color:rgb(210, 232, 250);"> 최다 판매, 후기BEST 트렌트코트. 브랜드 퀄리티 후기 꼭 보세요 정말 좋아요</span></p><hr>
+							<p style="color:black; text-align:center;"><strong>수량</strong> :
+								
+								2
+							</p>
+							<p style="color:black; text-align:center;"><strong>가격</strong> : ￦129,000</p>
+						</a>
+						<div class="btn-group">
+							<div class="but">
+							
+									<a href="insertbasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='/pro02/product/img_1/coat5.jpg' alt="리뮤즈 하프 트렌치 코드"/>
+					</div>
+					<div class="caption">
+						<a href="productdetail0104.html">
+							<h4 style="color:black; text-align:center;"><span class="letter"><strong>리뮤즈 하프 트렌치 코드</strong></span></h4>
+							<p class="comment"><span style="background-color:rgb(210, 232, 250);"> 간절기에 착용하기 좋은 하프 길이감의 트렌치 코트예요</span></p><hr>
+							<p style="color:black; text-align:center;"><strong>수량</strong> :
+								
+								6
+							</p>
+							<p style="color:black; text-align:center;"><strong>가격</strong> : ￦109,800</p>
+						</a>
+						<div class="btn-group">
+							<div class="but">
+							
+									<a href="insertbasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</article>
+			
+		
+	</div>
+</div>
+
+
+<footer class="ft" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+	<div class="containter-fluid ft_wrap">
+		<p style="font-weight:bold;">Copyright © 베니토 ALL RIGHTS RESERVED</p>
+	</div>
+</footer>
+</body>
+</html>

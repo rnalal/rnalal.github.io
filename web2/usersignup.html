@@ -1,0 +1,314 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+	
+
+	
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="subject" content="Benito">
+    <meta name="keywords" content="Benito, 가디건, 블라우스, 슬랙스, 옷, 쇼핑몰">
+    <meta name="description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="author" content="jy">
+
+    <link rel="shortcut icon" href="/pro02/img_1/logo1.png">
+
+    <meta name="og:site_name" content="Benito">
+    <meta name="og:title" content="Benito">
+    <meta name="og:description" content="Benito는 가디건, 블라우스, 슬랙스 등 다양한 옷을 판매하고 있는 쇼핑몰입니다.">
+    <meta name="og:url" content="https://www.benito.com">
+    <meta name="og:image" content="/pro02/img/thumbnail.png">
+
+    <!--기본 폰트 및 초기화 로딩-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    
+ 	<!-- jquery cdn -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+
+<title>회원 가입</title>
+<style>
+	.container-fluid { width:1280px; }
+	.agree_fr { width:900px; white-space:pre-wrap; margin: 10px auto;
+	padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
+	.title { padding-top:50px; padding-bottom:40px; }
+</style>
+</head>
+<body>
+
+
+
+
+
+<header id="hd" class="container">
+	<div class="container-fluid">
+		<nav id="tnb" class="navbar navbar-default">
+			<ul class="nav navbar-nav navbar-right" style="padding-right:40px">
+				
+					<li><a href="/pro02/UserLogin.do">로그인</a></li>
+					<li><a href="/pro02/UserTerms.do">회원가입</a></li>
+				
+				
+			</ul>			
+		</nav>
+	</div>
+	<div class="container-fluid" style="padding-right:30px;">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/pro02">BENITO</a>
+				</div>
+				
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" date-toggle="tab-hover" role="tablist">
+						<li class="active"><a href="index.html">BENITO<span class="sr-only">(current)</span></a></li>
+						<li><a href="noticelist.html">공지사항</a></li>
+						<li class="dropdown">
+							<a href="cate1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OUTER <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0101.html">코트</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0102.html">패딩</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0103.html">자켓</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0104.html">트위드</a></li>
+							</ul>
+						</li>		
+						<li class="dropdown">
+							<a href="cate2.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DRESS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0201.html">데일리</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0202.html">롱</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0203.html">미니</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0204.html">레이스</a></li>
+							</ul>
+						</li>	
+						<li class="dropdown">
+							<a href="cate3.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BLOUSE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0301.html">무지</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0302.html">셔츠</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0303.html">슬리브리스</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0304.html">프릴</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0305.html">타이</a></li>
+							</ul>
+						</li> 
+						<li class="dropdown">
+							<a href="cate4.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">KNIT/TEE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0401.html">에브리데이T</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0402.html">니트</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0403.html">가디건</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0404.html">티</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="cate5.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PANTS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="cate0501.html">데님</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0502.html">슬랙스</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0503.html">멜팅트레이닝</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0504.html">숏팬츠</a></li>
+								<li class="divider"></li>
+								<li><a href="cate0505.html">점프수트</a></li>
+							</ul>
+						</li>
+					<li class="dropdown">
+     		    	<a href="noticelist.html"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+			        <ul class="dropdown-menu" role="menu">
+			            <li><a href="noticelist.html">공지사항</a></li>
+			            <li class="divider"></li>
+			            <li><a href="faqlist.html">자주하는 질문</a></li>
+			            <li class="divider"></li>
+			            <li><a href="qnalist.html">묻고 답하기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="reviewlist.html">이용후기</a></li>
+			            <li class="divider"></li>
+			            <li><a href="datalist.html">자료실</a></li>
+			        </ul>
+     		    </li>
+					</ul>					
+							
+				</div>				
+							
+				</div>				
+			</div>
+		</nav>
+	</div>
+</header>	
+	
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px; ">
+	<section class="container-fluid">
+		<h2 class="title">회원가입</h2>
+		<form name="frm1" id="frm1" action="userjoinpro.html" method="post" onsubmit="return joinCheck(this)">
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<div class="form-row">
+								<input type="text" name="id" id="id" placeholder="영문소문자 및 숫자를 혼용하여 15글자 이내로 아이디 입력" class="form-control" pattern="^[a-z0-9]{8,16}" maxlength="15" style="width:80%;display:inline-block;" autofocus required />
+								<input type="button" class="btn btn-default" value="아이디 중복 확인" onclick="idCheck()">
+								<input type="hidden" name="idck" id="idck" value="no">
+							</div>
+							<div>
+								
+								<p id="msg" style="padding-left:0.5rem">아직 아이디 중복 체크를 하지 않으셨습니다.</p>
+								
+								
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td>
+							<input type="password" name="pw" id="pw" placeholder="비밀번호 입력" class="form-control" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" maxlength="16" required />
+							<p>비밀번호는 최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함되어야 함</p>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호 확인</th>
+						<td><input type="password" name="pw2" id="pw2" placeholder="비밀번호  확인 입력" class="form-control" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" maxlength="16" required /></td>
+					</tr>
+					<tr>
+						<th>회원이름</th>
+						<td><input type="text" name="name" id="name" placeholder="이름 입력" class="form-control" required /></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="email" name="email" id="email" placeholder="이메일 입력" class="form-control" required></td>
+					</tr>
+					<tr>
+						<th>연락처</th>
+						<td><input type="tel" name="tel" id="tel" maxlength="11" placeholder="전화번호 숫자만 입력 00000000000" class="form-control" required></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td><input type="text" name="address1" id="address1" placeholder="기본 주소 입력" class="form-control" required /><br>
+						<input type="text" name="address2" id="address2" placeholder="상세 주소 입력" class="form-control" required /><br>
+						<input type="text" name="postcode" id="postcode" style="width:160px;float:left;margin-right:20px;" placeholder="우편번호" class="form-control">
+						<button id="post_btn" onclick="findAddr()" class="btn btn-default">우편번호 검색</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" value="회원가입" class="btn btn-info"/>
+							<input type="reset" value="취소" class="btn btn-default"/>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<script>
+		function idCheck(){
+			if($("#id").val()==""){
+				alert("아이디를 입력하시기 바랍니다.");
+				$("#id").focus();
+				return;
+			}
+			var params = { id:$("#id").val() }
+			$.ajax({
+				url:"/pro02/IdCheck.do",
+				type:"post",
+				dataType:"json",
+				data:params,
+				success:function(result){
+					var idChk = result.result;
+					if(idChk==false){
+						$("#idck").val("no");
+						$("#msg").html("<strong>사용할 수 없는 아이디 입니다.</strong>")
+					} else if(idChk==true){
+						$("#idck").val("yes");
+						$("#id").attr("readonly","true");
+						$("#msg").html("<strong>사용 가능한 아이디 입니다.</strong>");
+						$("#pw").focus();
+					} else {
+						$("#msg").html("<strong>아이디가 확인되지 않았습니다. 다시 시도 바랍니다.</strong>")
+					}
+				}
+			});
+		}
+		function joinCheck(f){
+			if(f.pw.value!=f.pw2.value){
+				alert("비밀번호와 비밀번호 확인이 서로 다릅니다.");
+				f.pw.focus();
+				return false;
+			}
+			if(f.idck.value!="yes"){
+				alert("아이디 중복 체크를 하지 않으셨습니다.");
+				return false;
+			}
+		}
+		function findAddr(){
+			new daum.Postcode({
+				oncomplete: function(data) {
+					console.log(data);
+					var roadAddr = data.roadAddress;
+					var jibunAddr = data.jibunAddress;
+					document.getElementById("postcode").value = data.zonecode;
+					if(roadAddr !== '') {
+						document.getElementById("address1").value = roadAddr;				
+					} else if(jibunAddr !== ''){
+						document.getElementById("address1").value = jibunAddr;
+					}
+					document.getElementById("address2").focus();
+				}
+			}).open();		
+		}
+		</script>
+		<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	</section>	
+</div>
+
+
+<footer class="ft" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+	<div class="containter-fluid ft_wrap">
+		<p style="font-weight:bold;">Copyright © 베니토 ALL RIGHTS RESERVED</p>
+	</div>
+</footer>
+</body>
+</html>
+
